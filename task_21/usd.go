@@ -13,7 +13,7 @@ type DollarWallet struct {
 	balance DollarValue
 }
 
-// Метод для получения долларов(её мы и адаптируем)
+// Метод для получения долларов(его мы и адаптируем)
 func (dw *DollarWallet) ReceiveUSD(usd DollarValue) {
 	dw.balance.dollars += usd.dollars
 	dw.balance.cents += usd.cents
