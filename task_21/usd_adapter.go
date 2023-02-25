@@ -12,7 +12,7 @@ P.S. Пример сугубо ради демонстрации паттерн�
 */
 func (adapter *DollarAdapter) ReceiveRUB(rub RubleValue) {
 	adapter.dw.ReceiveUSD(DollarValue{
-		dollars: rune(rub.rubles * 72),
+		dollars: rune(rub.rubles / 72),
 		cents:   rune(rub.kopecks),
 	})
 }
